@@ -7,12 +7,20 @@ let functionOne =  function (number, string) {
     result = [];
     for (let i = 0; i < number; i++) {
         result.push(string);
-    };
+    }
     return result;
 };
 
 // 2) Implemente um método que inverta um array, não utilize métodos nativos do array.
 // Entrada do método ([1,2,3,4]), Resultado do método: [4,3,2,1]
+
+let functionTwo =  function (array) {
+    result = [];
+    for (let i = array.length-1; i !== -1; i--) {
+        result.push(array[i]);
+    }
+    return result;
+};
 
 // 3) Implemente um método que limpe os itens desnecessários de um array (false, undefined, strings vazias, zero, null).
 // Entrada do método ([1,2,'', undefined]), Resultado do método: [1,2]
