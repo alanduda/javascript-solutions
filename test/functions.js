@@ -50,6 +50,16 @@ let functionFour =  function (array) {
 // 6) Implemente um método que retorne um array, sem valores duplicados.
 // Entrada do método ([1,2,3,3,2,4,5,4,7,3]), Resultado do método: [1,2,3,4,5,7]
 
+let functionSix =  function (array) {
+    result = [];
+    array.forEach(element => {
+        if (!result.includes(element)) {
+            result.push(element);
+        }
+    })
+    return result;
+};
+
 // 7) Implemente um método que compare a igualdade de dois arrays e retorne um valor booleano.
 // Entrada do método ([1,2,3,4],[1,2,3,4]), Resultado do método: true
 
