@@ -16,14 +16,23 @@ let functionOne =  function (number, string) {
 
 let functionTwo =  function (array) {
     result = [];
-    for (let i = array.length-1; i !== -1; i--) {
-        result.push(array[i]);
+    for (let i = array.length; i !== 0; i--) {
+        result.push(array[i-1]);
     }
     return result;
 };
 
 // 3) Implemente um método que limpe os itens desnecessários de um array (false, undefined, strings vazias, zero, null).
 // Entrada do método ([1,2,'', undefined]), Resultado do método: [1,2]
+
+let functionThree =  function (array) {
+    for (let i = array.length; i !== 0; i--) {
+        if ([false, undefined, '', 0, null].includes(array[i-1])) {
+            array.splice(i-1, 1);
+        }
+    }
+    return array;
+};
 
 // 4) Implemente um método que a partir de um array de arrays, converta em um objeto com chave e valor.
 // Entrada do método ([["c",2],["d",4]]), Resultado do métdodo: {c:2, d:4}
