@@ -37,6 +37,14 @@ let functionThree =  function (array) {
 // 4) Implemente um método que a partir de um array de arrays, converta em um objeto com chave e valor.
 // Entrada do método ([["c",2],["d",4]]), Resultado do métdodo: {c:2, d:4}
 
+let functionFour =  function (array) {
+    result = {};
+    array.forEach(element => {
+        result[element[0]] = element[1];
+    })
+    return result;
+};
+
 // 5) Implemente um método que retorne um array, sem os itens passados por parâmetro depois do array de entrada. Entrada do método ([5,4,3,2,5], 5,3), Resultado do método: [4,2]
 
 // 6) Implemente um método que retorne um array, sem valores duplicados.
