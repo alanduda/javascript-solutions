@@ -3,6 +3,14 @@
 // 1) Implemente um método que crie um novo array baseado nos valores passados.
 // Entradas do método (3,a), Resultado do método: ['a', 'a', 'a']
 
+let functionOne =  function (number, string) {
+    result = [];
+    for (let i = 0; i < number; i++) {
+        result.push(string);
+    };
+    return result;
+};
+
 // 2) Implemente um método que inverta um array, não utilize métodos nativos do array.
 // Entrada do método ([1,2,3,4]), Resultado do método: [4,3,2,1]
 
