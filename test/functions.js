@@ -63,6 +63,15 @@ let functionSix =  function (array) {
 // 7) Implemente um método que compare a igualdade de dois arrays e retorne um valor booleano.
 // Entrada do método ([1,2,3,4],[1,2,3,4]), Resultado do método: true
 
+let functionSeven =  function (arrayOne, arrayTwo) {
+    if (arrayOne.length !== arrayTwo.length) return false;
+    
+    for (let i = 0; i < arrayOne.length; i++) {
+        if (!(arrayOne[i] === arrayTwo[i])) return false;
+    }
+    return true;
+};
+
 // 8) Implemente um método que remova os aninhamentos de um array de arrays para um array unico.
 // Entrada do método ([1, 2, [3], [4, 5]]), Resultado do método: [1, 2, 3, 4, 5]
 
