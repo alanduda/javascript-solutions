@@ -74,6 +74,15 @@ let functionSeven =  function (arrayOne, arrayTwo) {
 // 8) Implemente um método que remova os aninhamentos de um array de arrays para um array unico.
 // Entrada do método ([1, 2, [3], [4, 5]]), Resultado do método: [1, 2, 3, 4, 5]
 
+let functionEight =  function (array) {
+    let result = [];
+    array.forEach(element => {
+        if (typeof(element) !== 'object') { result.push(element) }
+        else { element.forEach(element => { result.push(element) }) }
+    });
+    return result; 
+};
+
 // 9) Implemente um método divida um array por uma quantidade passada por parâmetro.
 // Entrada do método ([1, 2, 3, 4, 5], 2), Resultado do método: [[1, 2], [3, 4], [5]]
 
