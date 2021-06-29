@@ -86,6 +86,30 @@ let functionEight =  function (array) {
 // 9) Implemente um método divida um array por uma quantidade passada por parâmetro.
 // Entrada do método ([1, 2, 3, 4, 5], 2), Resultado do método: [[1, 2], [3, 4], [5]]
 
+let functionNine =  function (array, number) {
+    let result = [];
+    let rest = array.length%number;
+    while (array.length != 0) {
+        if (array.length != rest) {
+            let auxiArray = [];
+            for (let i = 0; i < number; i++) {
+                auxiArray.push(array[0]);
+                array.splice(0, 1);
+            }
+            result.push(auxiArray);
+        }
+        else {
+            let auxiArray = [];
+            for (let i = 0; i < rest; i++) {
+                auxiArray.push(array[0]);
+                array.splice(0, 1);
+            }
+            result.push(auxiArray);
+        }
+    }
+    return result; 
+};
+
 // 10) Implemente um método que encontre os valores comuns entre dois arrays.
 // Entrada do método ([6, 8], [8, 9]), Resultado do método: [8]
 
