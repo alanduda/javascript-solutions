@@ -113,4 +113,12 @@ let functionNine =  function (array, number) {
 // 10) Implemente um método que encontre os valores comuns entre dois arrays.
 // Entrada do método ([6, 8], [8, 9]), Resultado do método: [8]
 
+let functionTen =  function (arrayOne, arrayTwo) {
+    let result = [];
+    arrayOne.forEach(element => { 
+        if (arrayTwo.includes(element)) { result.push(element) };
+    })
+    return result;
+};
+
 // ps: Esses exercícios são de senso comum da comunidade desenvolvimento, utilize o melhor padrão para implementação, criando uma semântica factível.
