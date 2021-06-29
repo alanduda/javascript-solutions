@@ -47,6 +47,14 @@ let functionFour =  function (array) {
 
 // 5) Implemente um método que retorne um array, sem os itens passados por parâmetro depois do array de entrada. Entrada do método ([5,4,3,2,5], 5,3), Resultado do método: [4,2]
 
+let functionFive =  function (array, numberOne, numberTwo) {
+    let result = [];
+    array.forEach(element => {
+        if (element != numberOne & element != numberTwo) { result.push(element); }
+    })
+    return result;
+};
+
 // 6) Implemente um método que retorne um array, sem valores duplicados.
 // Entrada do método ([1,2,3,3,2,4,5,4,7,3]), Resultado do método: [1,2,3,4,5,7]
 
